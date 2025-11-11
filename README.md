@@ -3,7 +3,7 @@
 [![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 [![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)](https://expressjs.com/)
 [![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
-[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 A secure and user-friendly cloud-based file storage application built with Node.js and Express. This application allows users to register, log in, and manage their personal files with features including upload, download, rename, and delete. It implements robust security measures with bcryptjs for password encryption and session-based authentication to ensure that user data and files are protected.
 
@@ -201,7 +201,7 @@ Contributions are what make the open-source community such an amazing place to l
 
 ## License
 
-This project is licensed under the ISC License.
+Distributed under the **Apache License 2.0**. See the `LICENSE` file for the full terms and the **`NOTICE`** file for copyright information.
 
 ---
 
