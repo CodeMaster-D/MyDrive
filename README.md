@@ -144,7 +144,7 @@ G-drive/
 
 ## login 
 1.  username    : user
-    password    : user123
+2.  password    : user123
 
 ### Managing Files
 -   **Upload**: Use the upload form on the dashboard to add files.
