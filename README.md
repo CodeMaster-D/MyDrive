@@ -142,6 +142,10 @@ G-drive/
 2.  Click "Register here" to create a new account.
 3.  After registering, use your credentials to log in.
 
+## login 
+1.  username    : user
+    password    : user123
+
 ### Managing Files
 -   **Upload**: Use the upload form on the dashboard to add files.
 -   **View**: All your uploaded files are listed on the dashboard.
