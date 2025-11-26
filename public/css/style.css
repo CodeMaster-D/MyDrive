@@ -1,257 +1,115 @@
-:root {
-    --primary-color: #6a4c3f; /* Dark brown */
-    --secondary-color: #f5f5dc; /* Beige/off-white */
-    --text-color: #333;
-    --card-bg: #ffffff;
-    --hover-color: #8c6a5e;
-}
+ @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-}
-
-body {
-    background-color: var(--secondary-color);
-    color: var(--text-color);
-}
-
-/* Authentication Pages */
-.auth-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-.auth-card {
-    background-color: var(--card-bg);
-    padding: 3rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
-}
-
-.auth-card h2 {
-    margin-bottom: 1.5rem;
-    color: var(--primary-color);
-}
-
-.auth-card input {
-    width: 100%;
-    padding: 0.8rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.auth-card button {
-    width: 100%;
-    padding: 0.8rem;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.auth-card button:hover {
-    background-color: var(--hover-color);
-}
-
-.auth-card p {
-    margin-top: 1rem;
-}
-
-.auth-card a {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.auth-card a:hover {
-    text-decoration: underline;
-}
-
-/* Dashboard */
-header {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.user-info button {
-    background-color: transparent;
-    border: 1px solid white;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.user-info button:hover {
-    background-color: var(--hover-color);
-}
-
-.dashboard-container {
-    padding: 2rem;
-    max-width: 1200px;
-    margin: auto;
-}
-
-.upload-section {
-    padding: 1.5rem;
-    background-color: var(--card-bg);
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
-}
-
-#uploadForm {
-    display: flex;
-    gap: 1rem;
-}
-
-#uploadForm input[type="file"] {
-    flex-grow: 1;
-    border: 1px solid #ddd;
-    padding: 0.5rem;
-    border-radius: 5px;
-}
-
-#uploadForm button {
-    padding: 0.8rem 1.5rem;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#uploadForm button:hover {
-    background-color: var(--hover-color);
-}
-
-.files-list {
-    background-color: var(--card-bg);
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.file-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    border-bottom: 1px solid #eee;
-    transition: background-color 0.3s ease;
-}
-
-.file-item:last-child {
-    border-bottom: none;
-}
-
-.file-item:hover {
-    background-color: var(--secondary-color);
-}
-
-.file-name {
-    font-weight: bold;
-    color: var(--primary-color);
-    text-decoration: none;
-}
-
-.file-name:hover {
-    text-decoration: underline;
-}
-
-.file-date {
-    font-size: 0.8rem;
-    color: #666;
-}
-/* --- Tambahkan kode ini di akhir file style.css --- */
-
-.file-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    border-bottom: 1px solid #eee;
-    transition: background-color 0.3s ease;
-}
-
-.file-item:last-child {
-    border-bottom: none;
-}
-
-.file-item:hover {
-    background-color: var(--secondary-color);
-}
-
-.file-info {
-    display: flex;
-    flex-direction: column;
-}
-
-.file-name {
-    font-weight: bold;
-    color: var(--primary-color);
-    text-decoration: none;
-}
-
-.file-name:hover {
-    text-decoration: underline;
-}
-
-.file-date {
-    font-size: 0.8rem;
-    color: #666;
-}
-
-.file-actions {
-    display: flex;
-    gap: 0.5rem;
-}
-
-.action-btn {
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 0.8rem;
-    transition: background-color 0.3s ease;
-}
-
-.rename-btn {
-    background-color: #5cb85c;
-    color: white;
-}
-
-.rename-btn:hover {
-    background-color: #4cae4c;
-}
-
-.delete-btn {
-    background-color: #d9534f;
-    color: white;
-}
-
-.delete-btn:hover {
-    background-color: #c9302c;
-}
+        :root {
+            --primary-color: #6a4c3f; /* Dark brown */
+            --secondary-color: #f5f5dc; /* Beige/off-white */
+            --text-color: #333;
+            --card-bg: rgba(255, 255, 255, 0.25);
+            --hover-color: #8c6a5e;
+        }
+        
+        body {
+            background-color: var(--hover-color);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: quicksand, sans-serif;
+            font-weight: 500;
+        }
+        
+        .glass {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+        }
+        
+        .glass-dark {
+            background: rgba(106, 76, 63, 0.25);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+        
+        .glass-button {
+            background: #FFFBEA;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            transition: all 0.3s ease;
+        }
+        
+        .glass-button:hover {
+            background:rgb(254 243 199);
+            transform: translateY(-2px);
+        }
+        
+        .glass-input {
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+        
+        .glass-file-item {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            transition: all 0.3s ease;
+        }
+        
+        .glass-file-item:hover {
+            background: rgba(245, 245, 220, 0.4);
+            transform: translateY(-2px);
+        }
+        
+        .modal-backdrop {
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+        }
+        
+        .file-link {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        
+        .file-link:hover {
+            text-decoration: underline;
+        }
+        
+        .file-date {
+            font-size: 0.8rem;
+            color: #666;
+        }
+        
+        .action-btn {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            transition: all 0.3s ease;
+        }
+        
+        .rename-btn {
+            background-color: rgba(76, 174, 76, 0.9);
+            color: white;
+        }
+        
+        .rename-btn:hover {
+            background-color: rgba(76, 174, 76, 0.9);
+            transform: translateY(-2px);
+        }
+        
+        .delete-btn {
+            background-color:rgba(201, 48, 44, 0.9);
+            color: white;
+        }
+        
+        .delete-btn:hover {
+            background-color: rgba(201, 48, 44, 0.9);
+            transform: translateY(-2px);
+        }

@@ -4,28 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - My Drive</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
-    <header>
-        <div class="logo">My Drive</div>
-        <div class="user-info">
-            <span id="welcomeUser"></span>
-            <button id="logoutBtn">Logout</button>
+<body class="min-h-screen">
+    <!-- Header -->
+    <header class="glass-dark text-white p-4 flex justify-between items-center shadow-lg">
+        <div class="logo text-2xl font-bold">My Drive</div>
+        <div class="user-info flex items-center gap-4">
+            <span id="welcomeUser" class="text-lg"></span>
+            <button id="logoutBtn" class="glass-button px-4 py-2 rounded-md text-amber-700 border border-white/30">
+                Logout
+            </button>
         </div>
     </header>
-    <main class="dashboard-container">
-        <div class="upload-section">
-            <form id="uploadForm">
-                <input type="file" id="fileInput" required>
-                <button type="submit">Unggah</button>
+
+    <!-- Main Dashboard Container -->
+    <main class="dashboard-container container mx-auto p-6 max-w-6xl">
+        <!-- Upload Section -->
+        <div class="glass rounded-xl p-6 mb-6 shadow-xl">
+            <h2 class="text-2xl font-bold mb-4 text-white">Unggah File Baru</h2>
+            <form id="uploadForm" class="flex flex-col sm:flex-row gap-4">
+                <input type="file" id="fileInput" required 
+                       class="glass-input flex-grow p-3 rounded-md text-gray-800 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-amber-50 file:text-amber-700 hover:file:bg-amber-100">
+                <button type="submit" class="glass-button px-6 py-3 rounded-md text-amber-700 font-semibold">
+                    Unggah
+                </button>
             </form>
         </div>
-        <hr>
-        <div class="files-list" id="filesList">
-            <h3>File Saya</h3>
+
+        <!-- Files List -->
+        <div class="glass rounded-xl p-6 shadow-xl">
+            <h2 class="text-2xl font-bold mb-4 text-white">File Saya</h2>
+            <div id="filesList" class="space-y-3">
+                <!-- Files will be dynamically added here -->
+            </div>
         </div>
     </main>
-    <script src="/js/script.js"></script>
+
+    <!-- Logout Confirmation Modal -->
+    <div id="logoutModal" class="fixed inset-0 z-50 hidden">
+        <div class="modal-backdrop fixed inset-0"></div>
+        <div class="fixed inset-0 flex items-center justify-center p-4">
+            <div class="glass rounded-xl p-6 max-w-md w-full shadow-2xl transform transition-all">
+                <h3 class="text-xl font-bold mb-4 text-[#f5f5dc]">Konfirmasi Logout</h3>
+                <p class="mb-6 text-white">Apakah Anda yakin ingin keluar dari akun Anda?</p>
+                <div class="flex justify-end gap-3">
+                    <button id="cancelLogout" class="glass-button px-4 py-2 rounded-md text-black">
+                        Batal
+                    </button>
+                    <button id="confirmLogout" class="glass-button px-4 py-2 rounded-md text-white bg-red-500 hover:bg-red-500">
+                        Ya, Keluar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
 </body>
 </html>
