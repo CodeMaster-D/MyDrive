@@ -62,7 +62,7 @@ Make sure you have the following installed:
 
 ### Database Setup
 
-1.  Open your MySQL client and create the database:
+1.  [Import this File](database\file_storage_dbb.sql) OR open your MySQL client and create the database:
     ```sql
     CREATE DATABASE file_storage_dbb;
     ```
