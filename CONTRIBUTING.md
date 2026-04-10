@@ -1,6 +1,6 @@
-# Contributing to My Drive - Cloud File Storage Application
+# Contributing to MyDrive - Cloud File Storage Application
 
-Thank you for your interest in contributing to "My Drive"! We're excited to have you on board. This document provides guidelines and information to help you get started with contributing to this cloud file storage application.
+Thank you for your interest in contributing to "MyDrive"! We're excited to have you on board. This document provides guidelines and information to help you get started with contributing to this cloud file storage application.
 
 ## Code of Conduct
 
